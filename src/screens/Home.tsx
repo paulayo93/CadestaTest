@@ -1,15 +1,17 @@
-import {Text, View} from 'react-native';
-import {ms} from 'react-native-size-matters'
+import { View} from 'react-native';
+import {useSafeAreaInsets} from 'react-native-safe-area-context';
+import WelcomeHeader from '../components/WelcomeHeader.tsx';
+import Container from '../common/Container.tsx';
 
 const Home = () => {
+  const insets = useSafeAreaInsets();
 
   return (
-    <View>
-      <Text style={{fontFamily: 'Satoshi-Medium', fontSize: ms(16), lineHeight: 20}}> Welcome
-      </Text>
-    </View>
-  )
-}
+    <Container padded={true} >
+     <WelcomeHeader/>
 
+    </Container>
+  );
+};
 
-export default  Home;
+export default Home;
