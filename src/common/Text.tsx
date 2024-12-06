@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React from 'react';
 import {Text, StyleSheet, TextStyle} from 'react-native';
-import {Black} from './Colors';
+import {Black800} from './Colors';
 import {ms} from 'react-native-size-matters';
 
 interface TextProps extends TextStyle {
@@ -76,28 +76,28 @@ const styles = StyleSheet.create({
     fontFamily: 'Satoshi-Bold',
     fontSize: ms(16),
     lineHeight: ms(20),
-    color: Black,
+    color: Black800,
   },
   regularText: {
     fontFamily: 'Satoshi-Regular',
     fontSize: ms(12),
     lineHeight: ms(14),
-    color: Black,
+    color: Black800,
   },
   smallText: {
     fontFamily: 'Satoshi-Regular',
     fontSize: ms(12),
     lineHeight: ms(20),
-    color: Black,
+    color: Black800,
   },
   semiboldText: {
     fontFamily: 'Satoshi-SemiBold',
     fontSize: ms(14),
-    color: Black,
+    color: Black800,
   },
   mediumText: {
     fontFamily: 'Satoshi-Medium',
     fontSize: ms(16),
-    color: Black,
+    color: Black800,
   },
 });
