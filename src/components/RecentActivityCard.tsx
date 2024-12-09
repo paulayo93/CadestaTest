@@ -1,8 +1,9 @@
 import {View, StyleSheet} from 'react-native';
 import {ClockChecked} from '../assets/icons';
 import {MediumText, RegularText} from '../common/Text.tsx';
-import {BlackMain} from '../common/Colors.ts';
+import {BlackMain, White} from '../common/Colors.ts';
 import React from 'react';
+import {s} from 'react-native-size-matters';
 
 const RecentActivityCard = () => {
 
@@ -34,10 +35,11 @@ const styles = StyleSheet.create({
   container:{
     paddingHorizontal: 10,
     paddingVertical: 10,
-    borderColor: '',
+    borderColor: White,
     borderWidth: 0.5,
     alignItems: 'center',
     borderRadius: 8,
+
   },
   title: {
     flexDirection: 'row',

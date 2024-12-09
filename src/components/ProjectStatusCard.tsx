@@ -9,10 +9,9 @@ import BriefCaseStatusColor from './BriefCaseStatusColor.tsx';
 const ProjectStatusCard = () => {
 
   return (
-    <View
-      style={styles.container}>
+    <View style={styles.container}>
       <View style={{alignItems: 'flex-start'}}>
-        <MediumText color={Gray500} text={'Active Projects'} />
+        <MediumText size={12} color={Gray500} text={'Active Projects'} />
         <RegularText
           text={'12'}
           size={24}
@@ -20,11 +19,11 @@ const ProjectStatusCard = () => {
           color={Black300}
         />
       </View>
-      <View>
-        <BriefCaseStatusColor status={'completed'}/>
+      <View style={{ paddingLeft: 31}}>
+        <BriefCaseStatusColor status={'completed'} />
       </View>
     </View>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
@@ -32,11 +31,11 @@ const styles = StyleSheet.create({
 
     flexDirection: 'row',
     justifyContent: 'space-between',
-    paddingVertical: 10,
-    paddingHorizontal: 15,
+    paddingVertical: 13,
+    paddingHorizontal: 14,
     borderRadius: ms(8),
     borderColor: 'rgba(0, 0, 0, 0.03)',
-    width: 200,
+    // width: 200,
     height: 90,
     borderWidth: 0.5,
     ...boxShadow(5, 8, 100, '#FFF', 0.45, 8),

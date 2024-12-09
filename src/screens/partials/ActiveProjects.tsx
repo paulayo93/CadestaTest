@@ -16,10 +16,13 @@ const ActiveProjects = () => {
         borderWidth: 0.5,
         borderColor: 'rgba(0, 0, 0, 0.03)',
         borderRadius: 5,
-        paddingHorizontal: 10,
+        paddingHorizontal: 15,
         paddingBottom: 10,
         paddingTop: 15,
-        ...boxShadow(4, 4, 10, 'rgba(0, 0, 0, 0.03)', 0.45, 8),
+        height: 132,
+        width: 300,
+        marginRight: 20,
+        ...boxShadow(10, 10, 10, 'rgba(0, 0, 0, 0.03)', 0.45, 8),
       }}>
       <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
         <View>
