@@ -5,8 +5,6 @@ import {RegularText} from '../../../common/Text.tsx';
 import {
   Black300,
   Blue100,
-  Gray100,
-  Gray150,
   Green100,
 } from '../../../common/Colors.ts';
 import {ms} from 'react-native-size-matters';

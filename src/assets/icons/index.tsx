@@ -6,16 +6,6 @@ interface Props extends SvgProps {
   color?: string;
 }
 
-// export const HomeTabIcon = (props: SvgProps) => (
-//   <Svg width={13} height={14} fill="none" {...props}>
-// <Path
-//   fillRule="evenodd"
-// clipRule="evenodd"
-// d="m7.004.204 5.43 5.565c.258.265.406.635.406 1.015v5.912c0 .779-.597 1.412-1.33 1.412H9.318V7.756a.705.705 0 0 0-.705-.706H4.387a.705.705 0 0 0-.705.706v6.352H1.491c-.733 0-1.33-.633-1.33-1.412V6.784c0-.38.147-.75.404-1.015L5.996.204a.724.724 0 0 1 1.008 0Zm.906 13.199H5.092V8.462H7.91v4.94Z"
-// fill={props.fill || '#1A75FD'}
-// />
-// </Svg>
-// );
 
 export const HomeTabIcon = () => (
   <Svg width="25" height="25" viewBox="0 0 25 25" fill="none">
@@ -90,63 +80,177 @@ export const VerticalDots = () => (
 
 export const Calendar = () => (
   <Svg width="16" height="17" viewBox="0 0 16 17" fill="none">
-    <Path d="M5.33328 2.06905V4.06905" stroke="#34C759" stroke-miterlimit="10" stroke-linecap="round"
-          stroke-linejoin="round" />
-    <Path d="M10.6666 2.06905V4.06905" stroke="#34C759" stroke-miterlimit="10" stroke-linecap="round"
-          stroke-linejoin="round" />
-    <Path d="M2.33328 6.79562H13.6666" stroke="#34C759" stroke-miterlimit="10" stroke-linecap="round"
-          stroke-linejoin="round" />
+    <Path
+      d="M5.33328 2.06905V4.06905"
+      stroke="#34C759"
+      stroke-miterlimit="10"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <Path
+      d="M10.6666 2.06905V4.06905"
+      stroke="#34C759"
+      stroke-miterlimit="10"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <Path
+      d="M2.33328 6.79562H13.6666"
+      stroke="#34C759"
+      stroke-miterlimit="10"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
     <Path
       d="M13.9999 6.40238V12.069C13.9999 14.069 12.9999 15.4024 10.6666 15.4024H5.33327C2.99994 15.4024 1.99994 14.069 1.99994 12.069V6.40238C1.99994 4.40238 2.99994 3.06905 5.33327 3.06905H10.6666C12.9999 3.06905 13.9999 4.40238 13.9999 6.40238Z"
-      stroke="#34C759" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-    <Path d="M10.4631 9.86896H10.4691" stroke="#34C759" stroke-width="1.33333" stroke-linecap="round"
-          stroke-linejoin="round" />
-    <Path d="M10.4631 11.869H10.4691" stroke="#34C759" stroke-width="1.33333" stroke-linecap="round"
-          stroke-linejoin="round" />
-    <Path d="M7.99694 9.86896H8.00293" stroke="#34C759" stroke-width="1.33333" stroke-linecap="round"
-          stroke-linejoin="round" />
-    <Path d="M7.99694 11.869H8.00293" stroke="#34C759" stroke-width="1.33333" stroke-linecap="round"
-          stroke-linejoin="round" />
-    <Path d="M5.5295 9.86896H5.53549" stroke="#34C759" stroke-width="1.33333" stroke-linecap="round"
-          stroke-linejoin="round" />
-    <Path d="M5.5295 11.869H5.53549" stroke="#34C759" stroke-width="1.33333" stroke-linecap="round"
-          stroke-linejoin="round" />
+      stroke="#34C759"
+      stroke-miterlimit="10"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <Path
+      d="M10.4631 9.86896H10.4691"
+      stroke="#34C759"
+      stroke-width="1.33333"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <Path
+      d="M10.4631 11.869H10.4691"
+      stroke="#34C759"
+      stroke-width="1.33333"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <Path
+      d="M7.99694 9.86896H8.00293"
+      stroke="#34C759"
+      stroke-width="1.33333"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <Path
+      d="M7.99694 11.869H8.00293"
+      stroke="#34C759"
+      stroke-width="1.33333"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <Path
+      d="M5.5295 9.86896H5.53549"
+      stroke="#34C759"
+      stroke-width="1.33333"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <Path
+      d="M5.5295 11.869H5.53549"
+      stroke="#34C759"
+      stroke-width="1.33333"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
   </Svg>
 );
 export const Calendar2 = () => (
-  <Svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <Path d="M5.33328 2.06905V4.06905" stroke="#34C759" stroke-miterlimit="10" stroke-linecap="round"
-          stroke-linejoin="round" />
-    <Path d="M10.6666 2.06905V4.06905" stroke="#34C759" stroke-miterlimit="10" stroke-linecap="round"
-          stroke-linejoin="round" />
-    <Path d="M2.33328 6.79562H13.6666" stroke="#34C759" stroke-miterlimit="10" stroke-linecap="round"
-          stroke-linejoin="round" />
+  <Svg
+    width="16"
+    height="17"
+    viewBox="0 0 16 17"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg">
+    <Path
+      d="M5.33328 2.06905V4.06905"
+      stroke="#34C759"
+      stroke-miterlimit="10"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <Path
+      d="M10.6666 2.06905V4.06905"
+      stroke="#34C759"
+      stroke-miterlimit="10"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <Path
+      d="M2.33328 6.79562H13.6666"
+      stroke="#34C759"
+      stroke-miterlimit="10"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
     <Path
       d="M13.9999 6.40238V12.069C13.9999 14.069 12.9999 15.4024 10.6666 15.4024H5.33327C2.99994 15.4024 1.99994 14.069 1.99994 12.069V6.40238C1.99994 4.40238 2.99994 3.06905 5.33327 3.06905H10.6666C12.9999 3.06905 13.9999 4.40238 13.9999 6.40238Z"
-      stroke="#34C759" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-    <Path d="M10.4631 9.86896H10.4691" stroke="#34C759" stroke-width="1.33333" stroke-linecap="round"
-          stroke-linejoin="round" />
-    <Path d="M10.4631 11.869H10.4691" stroke="#34C759" stroke-width="1.33333" stroke-linecap="round"
-          stroke-linejoin="round" />
-    <Path d="M7.99694 9.86896H8.00293" stroke="#34C759" stroke-width="1.33333" stroke-linecap="round"
-          stroke-linejoin="round" />
-    <Path d="M7.99694 11.869H8.00293" stroke="#34C759" stroke-width="1.33333" stroke-linecap="round"
-          stroke-linejoin="round" />
-    <Path d="M5.5295 9.86896H5.53549" stroke="#34C759" stroke-width="1.33333" stroke-linecap="round"
-          stroke-linejoin="round" />
-    <Path d="M5.5295 11.869H5.53549" stroke="#34C759" stroke-width="1.33333" stroke-linecap="round"
-          stroke-linejoin="round" />
+      stroke="#34C759"
+      stroke-miterlimit="10"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <Path
+      d="M10.4631 9.86896H10.4691"
+      stroke="#34C759"
+      stroke-width="1.33333"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <Path
+      d="M10.4631 11.869H10.4691"
+      stroke="#34C759"
+      stroke-width="1.33333"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <Path
+      d="M7.99694 9.86896H8.00293"
+      stroke="#34C759"
+      stroke-width="1.33333"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <Path
+      d="M7.99694 11.869H8.00293"
+      stroke="#34C759"
+      stroke-width="1.33333"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <Path
+      d="M5.5295 9.86896H5.53549"
+      stroke="#34C759"
+      stroke-width="1.33333"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <Path
+      d="M5.5295 11.869H5.53549"
+      stroke="#34C759"
+      stroke-width="1.33333"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
   </Svg>
-
 );
 
 export const Clock = () => (
-  <Svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <Svg
+    width="16"
+    height="17"
+    viewBox="0 0 16 17"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg">
     <Path
       d="M14.6667 8.73577C14.6667 12.4158 11.68 15.4024 8.00001 15.4024C4.32001 15.4024 1.33334 12.4158 1.33334 8.73577C1.33334 5.05577 4.32001 2.0691 8.00001 2.0691C11.68 2.0691 14.6667 5.05577 14.6667 8.73577Z"
-      stroke="#F0A500" stroke-linecap="round" stroke-linejoin="round" />
-    <Path d="M10.4733 10.8558L8.40666 9.62244C8.04666 9.40911 7.75333 8.89577 7.75333 8.47577V5.74244" stroke="#F0A500"
-          stroke-linecap="round" stroke-linejoin="round" />
+      stroke="#F0A500"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <Path
+      d="M10.4733 10.8558L8.40666 9.62244C8.04666 9.40911 7.75333 8.89577 7.75333 8.47577V5.74244"
+      stroke="#F0A500"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
   </Svg>
 );
 

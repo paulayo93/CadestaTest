@@ -3,7 +3,6 @@ import {HeaderText, MediumText} from '../common/Text.tsx';
 import {Black100, BlackMain} from '../common/Colors.ts';
 import React from 'react';
 
-
 const ActivityElement = ({title, subTitle, Icon}) => (
   <View style={{flexDirection: 'row', alignItems: 'center'}}>
     <View style={{marginRight: 7}}>

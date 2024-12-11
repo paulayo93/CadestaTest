@@ -1,5 +1,4 @@
-import {Canvas, Fill} from '@shopify/react-native-skia';
-import {Blue, White} from '../../common/Colors.ts';
+import {White} from '../../common/Colors.ts';
 import {View, StyleSheet, Platform, Pressable} from 'react-native';
 import useApplicationDimensions from '../../utils/useApplicationDimensions.tsx';
 import ArcComponent from './ArcComponent.tsx';

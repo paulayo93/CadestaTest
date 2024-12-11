@@ -3,8 +3,8 @@ export const boxShadow = (x, y, rad, color, opacity, elevation) => ({
   shadowRadius: rad,
   shadowOffset: {
     width: x,
-    height: y
+    height: y,
   },
   shadowOpacity: opacity,
-  elevation
+  elevation,
 });

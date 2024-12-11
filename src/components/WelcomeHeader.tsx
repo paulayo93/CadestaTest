@@ -6,7 +6,6 @@ import {Gray} from '../common/Colors.ts';
 
 const WelcomeHeader = () => (
   <View style={styles.container}>
-
     <View style={styles.wrapper}>
       <View>
         <Image
@@ -22,14 +21,16 @@ const WelcomeHeader = () => (
             fontSize: s(16),
             lineHeight: 20,
             color: 'Black',
-          }}/>
+          }}
+        />
         <MediumText
           text={'John Abayomi'}
           style={{
             fontSize: s(12),
             lineHeight: 16,
-            color: Gray
-          }}/>
+            color: Gray,
+          }}
+        />
       </View>
     </View>
 
@@ -37,12 +38,13 @@ const WelcomeHeader = () => (
       <NotifyIcon />
     </View>
   </View>
-
 );
 
 const styles = StyleSheet.create({
   container: {
-    flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between'
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
   },
   wrapper: {flexDirection: 'row', alignItems: 'center'},
   avatar: {
@@ -51,7 +53,7 @@ const styles = StyleSheet.create({
     height: ms(41),
     borderRadius: 26,
   },
-  textWrapper: {paddingHorizontal: ms(10)}
-})
+  textWrapper: {paddingHorizontal: ms(10)},
+});
 
-export default WelcomeHeader
+export default WelcomeHeader;

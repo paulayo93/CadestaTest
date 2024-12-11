@@ -1,29 +1,24 @@
-import {View} from 'react-native';
+import {View, StyleSheet} from 'react-native';
 import {boxShadow} from '../../utils';
 import {HeaderText, MediumText, RegularText} from '../../common/Text.tsx';
-import {Black100, BlackMain, Gray100, Gray200, Green100, Orange} from '../../common/Colors.ts';
+import {
+  Black100,
+  BlackMain,
+  Gray100,
+  Gray200,
+  Green100,
+  Orange,
+} from '../../common/Colors.ts';
 import {Calendar, Clock, Message, VerticalDots} from '../../assets/icons';
 import React from 'react';
 import ProgressBar from '../../components/ProgressBar.tsx';
 import Tag from '../../components/Tag.tsx';
 import ActivityElement from '../../components/ActivityElement.tsx';
+import {s} from 'react-native-size-matters';
 
 const ActiveProjects = () => {
-
   return (
-    <View
-      style={{
-        borderWidth: 0.5,
-        borderColor: 'rgba(0, 0, 0, 0.03)',
-        borderRadius: 5,
-        paddingHorizontal: 15,
-        paddingBottom: 10,
-        paddingTop: 15,
-        height: 132,
-        width: 300,
-        marginRight: 20,
-        ...boxShadow(10, 10, 10, 'rgba(0, 0, 0, 0.03)', 0.45, 8),
-      }}>
+    <View style={[styles.container]}>
       <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
         <View>
           <HeaderText
@@ -91,13 +86,24 @@ const ActiveProjects = () => {
           subTitle={'4 Months'}
           Icon={Clock}
         />
-        <ActivityElement
-          title={'Comments'}
-          subTitle={'2 New'}
-          Icon={Message}
-        />
+        <ActivityElement title={'Comments'} subTitle={'2 New'} Icon={Message} />
       </View>
     </View>
-  )
-}
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    borderWidth: 0.5,
+    borderColor: 'rgba(0, 0, 0, 0.03)',
+    borderRadius: s(8),
+    paddingHorizontal: 15,
+    paddingBottom: 10,
+    paddingTop: 15,
+    minHeight: 132.9,
+    minWidth: 300,
+    marginRight: 20,
+    ...boxShadow(10, 10, 10, 'rgba(0, 0, 0, 0.03)', 1, 20),
+  },
+});
 export default ActiveProjects;
