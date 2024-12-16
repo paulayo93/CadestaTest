@@ -2,6 +2,7 @@ import {White} from '../../common/Colors.ts';
 import {View, StyleSheet, Platform, Pressable} from 'react-native';
 import useApplicationDimensions from '../../utils/useApplicationDimensions.tsx';
 import ArcComponent from './ArcComponent.tsx';
+
 import {
   HomeIcon,
   MerchantIcon,
@@ -11,7 +12,7 @@ import {
 } from './icons';
 import CircleButton from './icons/CircleButton.tsx';
 
-const CadestaTabbar = () => {
+const CadestaTabbar = ({onPress}) => {
   const TabbarHeight = Platform.OS === 'ios' ? 107 : 130;
   const {width, height} = useApplicationDimensions();
   const circleRadius = (100 * 0.51) / 2;
@@ -39,6 +40,7 @@ const CadestaTabbar = () => {
         </Pressable>
 
         <Pressable
+          onPress={() => onPress()}
           style={{
             ...StyleSheet.absoluteFillObject,
             left: buttonCenterX,

@@ -17,16 +17,20 @@ import RecentActivityCard from '../components/RecentActivityCard.tsx';
 import CadestaTabbar from '../components/tabbar/CadestaTabbar.tsx';
 import ScrollView = Animated.ScrollView;
 
-const Home = () => {
+const Home = ({navigation}) => {
   const [isAtEnd, setIsAtEnd] = useState(false);
 
   const handleScroll = (event: any) => {
     const {layoutMeasurement, contentOffset, contentSize} = event.nativeEvent;
-
+  // console.log(layoutMeasurement, contentOffset, contentSize)
 
     const isEndReached =
-      layoutMeasurement.height + contentOffset.y >= contentSize.height - 20;
+ contentOffset.y >= contentSize.height - 20;
     setIsAtEnd(isEndReached);
+  };
+
+  const onCreateProject = () => {
+    navigation.navigate('create-project');
   };
   return (
     <View style={{...StyleSheet.absoluteFillObject, backgroundColor: White}}>
@@ -102,16 +106,20 @@ const Home = () => {
       <ScrollView
         onScroll={handleScroll}
         scrollEventThrottle={16}
-        style={{paddingHorizontal: 20, paddingBottom: 20}}>
+        style={{paddingHorizontal: 20, }}>
         <RecentActivityCard />
         <RecentActivityCard />
         <RecentActivityCard />
         <RecentActivityCard />
       </ScrollView>
 
-      <CadestaTabbar />
+      <CadestaTabbar onPress={onCreateProject}/>
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+
+})
 
 export default Home;
